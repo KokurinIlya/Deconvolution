@@ -1,0 +1,233 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// русский resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\Deconvolution.rc2""  // ресурсы, не редактируемые в Microsoft Visual C++\r\n"
+    "#include ""l.RUS\\afxres.rc""      // Стандартные компоненты\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Deconvolution.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "О проекте Deconvolution"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "Deconvolution, версия 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "ОК",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DECONVOLUTION_DIALOG DIALOGEX 0, 0, 616, 321
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Deconvolution"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "НАЧАЛЬНЫЕ ДАННЫЕ",IDC_STATIC,313,144,190,170
+    LTEXT           "АМПЛИТУДА",IDC_STATIC,348,169,44,8
+    LTEXT           "X",IDC_STATIC,409,169,8,8
+    LTEXT           "СИГМА",IDC_STATIC,452,169,24,8
+    EDITTEXT        IDC_EDIT1,348,183,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,348,207,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,348,231,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,396,183,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,396,207,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,396,231,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,444,183,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,444,207,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,444,231,40,14,ES_AUTOHSCROLL
+    LTEXT           "1",IDC_STATIC,328,183,8,8
+    LTEXT           "2",IDC_STATIC,328,207,8,8
+    LTEXT           "3",IDC_STATIC,328,231,8,8
+    PUSHBUTTON      "СИГНАЛ + ИМП. ХАР.",IDC_BUTTON1,530,221,79,27
+    PUSHBUTTON      "КОНВОЛЮЦИЯ",IDC_BUTTON2,530,254,78,27
+    PUSHBUTTON      "ДЕКОНВОЛЮЦИЯ",IDC_BUTTON3,532,287,75,27
+    CONTROL         "",IDC_SignalAndPulse,"Static",SS_WHITEFRAME,7,18,297,123,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_Convolution,"Static",SS_WHITEFRAME,312,18,297,123,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_Deconvolution,"Static",SS_WHITEFRAME,7,156,297,123,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    GROUPBOX        "СИГНАЛ",IDC_STATIC,321,158,171,92
+    GROUPBOX        "ИМПУЛЬСНАЯ ХАРАКТЕРИСТИКА",IDC_STATIC,322,257,171,47
+    LTEXT           "АМПЛИТУДА",IDC_STATIC,338,270,44,8
+    LTEXT           "СИГМА",IDC_STATIC,422,271,24,8
+    EDITTEXT        IDC_EDIT10,339,282,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,414,282,40,14,ES_AUTOHSCROLL
+    LTEXT           "ФУНКЦИОНАЛ = ",IDC_STATIC,77,294,59,8
+    EDITTEXT        IDC_EDIT12,145,291,69,14,ES_AUTOHSCROLL
+    GROUPBOX        "ПРОЦЕНТ ШУМА",IDC_STATIC,523,161,77,40
+    EDITTEXT        IDC_EDIT13,538,177,40,14,ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,583,179,8,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904e3"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Название организации>"
+            VALUE "FileDescription", "TODO: <Описание файла>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Deconvolution.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Название организации>. Все права защищены."
+            VALUE "OriginalFilename", "Deconvolution.exe"
+            VALUE "ProductName", "TODO: <Название продукта>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1251
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DECONVOLUTION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 609
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 314
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&О проекте Deconvolution..."
+END
+
+#endif    // русский resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "res\Deconvolution.rc2"  // ресурсы, не редактируемые в Microsoft Visual C++
+#include "l.RUS\afxres.rc"      // Стандартные компоненты
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
